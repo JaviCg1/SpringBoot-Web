@@ -1,5 +1,0 @@
-package com.openwejavi.spring.controladores;
-
-public class FileUploaderController {
-
-}

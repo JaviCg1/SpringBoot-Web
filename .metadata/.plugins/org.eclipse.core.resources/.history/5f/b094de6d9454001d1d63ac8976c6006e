@@ -1,8 +1,0 @@
-package com.openwejavi.spring.upload.storage;
-
-public class Snippet {
-	public static void main(String[] args) {
-		FileSystemStorageService 
-	}
-}
-

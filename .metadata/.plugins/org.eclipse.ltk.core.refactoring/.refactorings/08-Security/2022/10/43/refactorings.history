@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.openwejavi.spring.seguridad.SecurityConfig&apos; to &apos;SecurityConfig2&apos;&#x0D;&#x0A;- Original project: &apos;08-Security&apos;&#x0D;&#x0A;- Original element: &apos;com.openwejavi.spring.seguridad.SecurityConfig&apos;&#x0D;&#x0A;- Renamed element: &apos;com.openwejavi.spring.seguridad.SecurityConfig2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SecurityConfig&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.openwejavi.spring.seguridad{SecurityConfig.java[SecurityConfig" matchStrategy="1" name="SecurityConfig2" qualified="false" references="true" similarDeclarations="false" stamp="1666740084454" textual="false" version="1.0"/>
-</session>
