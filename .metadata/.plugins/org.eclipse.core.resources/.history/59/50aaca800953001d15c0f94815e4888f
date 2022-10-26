@@ -1,0 +1,60 @@
+package com.openwejavi.spring.servicios;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Service;
+
+import com.openwejavi.spring.modelo.Empleado;
+
+@Service
+public class EmpleadoService {
+
+	private ArrayList<Empleado> repositorio = new ArrayList<Empleado>();
+	
+	public void add(Empleado e) {
+		repositorio.add(e);
+	}
+	
+	public ArrayList<Empleado> get(){
+		return repositorio;
+	}
+	
+	@PostConstruct
+	public void init() {
+		repositorio.addAll(
+				Arrays.asList(new Empleado("0", "Pepe", "pepe@gmail.com", "6600111111", "33"),
+								new Empleado("1", "Manolo", "manolo@gmail.com", "62517623843", "21"),
+								new Empleado("2", "Juan", "juan@gmail.com", "647382923", "45"))
+				);
+	}
+	
+	public Empleado finById(String id) {
+		Empleado emp = null;
+		Boolean encontrado=false;
+		for (Empleado e : repositorio) {
+			if (e.getId().equals(id)) {
+				emp = e;
+				encontrado = true;
+				break;
+			}
+		}
+		return emp;
+	}
+	
+	public Empleado edit(Empleado em) {
+		
+		Boolean encontrado=false;
+		for (Empleado e : repositorio) {
+			if (e.getId().equals(em.getId())) {
+				repositorio.remove(Integer.parseInt(e.getId()));
+				repositorio.add(Integer.parseInt(em.getId()), em);
+				break;
+			}
+		}
+		return em;
+	}
+	
+}

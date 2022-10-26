@@ -1,0 +1,13 @@
+package com.openwejavi.spring.modelo;
+
+import java.util.Objects;
+
+public class Empleado {
+	private id;
+	private String nombre, email, telefono, edad;
+
+	
+	
+
+	
+}

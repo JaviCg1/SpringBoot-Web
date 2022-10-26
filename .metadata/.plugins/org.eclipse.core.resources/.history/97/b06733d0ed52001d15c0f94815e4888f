@@ -1,0 +1,6 @@
+package com.openwejavi.spring.modelo;
+
+public class Persona {
+	private String id, nombre, email, telefono, edad;
+	
+}

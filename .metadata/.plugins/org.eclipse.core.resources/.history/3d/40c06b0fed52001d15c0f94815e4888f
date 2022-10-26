@@ -1,0 +1,5 @@
+package com.openwejavi.spring.modelo;
+
+public class Persona {
+
+}

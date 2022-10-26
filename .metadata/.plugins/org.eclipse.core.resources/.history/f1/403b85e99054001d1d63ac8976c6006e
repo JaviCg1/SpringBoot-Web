@@ -1,0 +1,5 @@
+package com.openwejavi.spring.upload.storage;
+
+public interface StorageService {
+
+}
